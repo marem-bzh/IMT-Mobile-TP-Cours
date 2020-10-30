@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet, Text, TouchableHighlight, View} from 'react-native'
+import { StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 
 /**
  * Bouton permettant de créer une nouvelle action.
@@ -9,9 +9,10 @@ import {StyleSheet, Text, TouchableHighlight, View} from 'react-native'
  * TODO 1. Valoriser la propriété `onPress` de l'élément <TouchableHighlight> avec la valeur de `onValider`
 
  */
-const BoutonCreer = ({onValider}) => (
+const BoutonCreer = ({ onValider }) => (
     <View style={styles.conteneurBouton}>
         <TouchableHighlight
+            onPress={onValider}
             underlayColor='#efefef'
             style={styles.bouton}>
             <Text style={styles.valider}>
